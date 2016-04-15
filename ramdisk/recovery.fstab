@@ -1,0 +1,10 @@
+#<src>                <mnt_point>   <type>  <mnt_flags and options>   <fs_mgr_flags>
+/dev/block/mmcblk0p15 /efs          ext4    default                   recoveryonly
+/dev/block/mmcblk0p5  /boot         emmc    default                   recoveryonly
+/dev/block/mmcblk0p6  /recovery     emmc    default                   recoveryonly
+/dev/block/mmcblk0p16 /cache        ext4    default                   recoveryonly
+/dev/block/mmcblk0p17 /system       ext4    default                   recoveryonly
+/dev/block/mmcblk0p19 /data         ext4    default                   wait,length=-16384
+/dev/block/mmcblk0p18 /preload      ext4    default                   recoveryonly
+/dev/block/mmcblk1p1  /external_sd       vfat    default                   recoveryonly
+/dev/block/mmcblk0p7  /modem        emmc    default                   recoveryonly

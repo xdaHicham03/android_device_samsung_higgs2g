@@ -1,0 +1,13 @@
+on lmp
+    class_start lmp
+
+on property:init.svc.lmp=running
+    write /dev/kmsg TESTMODE_BOOTCOMPLETE
+
+service lmp /system/bin/sh /lmp_init.sh
+    class lmp
+    user root
+    group root
+    oneshot
+
+
